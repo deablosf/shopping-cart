@@ -16,8 +16,7 @@ class CartSum extends Component {
     render() {
         return (
             <div>
-                <h3>Item 1</h3> <p></p>
-                {/* <button onClick = {}> + </button> */}
+                
             </div>
         )
     }
