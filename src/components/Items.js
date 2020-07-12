@@ -6,22 +6,22 @@ class Items extends Component {
         this.state = {
             items : [
             {
-                item: "CPU",
+                item: "AMD Raver",
                 quantity: 0,
                 cost: 1299.99
             },
             {
-                item: "Mother Board",
+                item: "Asus T",
                 quantity: 0,
                 cost: 149.99
             },
             {
-                item: "SDD",
+                item: "1 TB inLand SDD",
                 quantity: 0,
                 cost: 129.99
             },
             {
-                item: "RAM",
+                item: "8GB X2",
                 quantity: 0,
                 cost: 89.99
             }
@@ -60,38 +60,42 @@ class Items extends Component {
                 <div className="itemlist">
                     <div id="itemOne" className="slot">
                         <img className="images" src="https://90a1c75758623581b3f8-5c119c3de181c9857fcb2784776b17ef.ssl.cf2.rackcdn.com/617456_058537_02_package_zoom.jpg"/>
-                    # 1 {CPU.item}  
-                    Price ${CPU.cost} Quantity
-                    <button onClick={()=> this.decrease(0)}>-</button>
-                     {CPU.quantity}
-                    <button onClick={()=> this.increase(0)}>+</button>
+                        <div className="guts"> {CPU.item} {' '}  
+                        Price ${CPU.cost} Quantity {' '}
+                        <button onClick={()=> this.decrease(0)}>-</button>
+                        {CPU.quantity}
+                        <button onClick={()=> this.increase(0)}>+</button>
+                        </div>
                     </div>
 
                     <div id="itemTwo" className="slot">
                         <img className="images" src="https://90a1c75758623581b3f8-5c119c3de181c9857fcb2784776b17ef.ssl.cf2.rackcdn.com/624551_127449_01_front_thumbnail.jpg" />
-                    # 2 {MotherBoard.item} 
-                    Price ${MotherBoard.cost} Quantity
-                    <button onClick={()=> this.decrease(1)}>-</button>
-                     {MotherBoard.quantity }
-                    <button onClick={()=> this.increase(1)}>+</button>
+                        <div className="guts"> {MotherBoard.item} {' '}
+                        Price ${MotherBoard.cost} Quantity {' '}
+                        <button onClick={()=> this.decrease(1)}>-</button>
+                        {MotherBoard.quantity } 
+                        <button onClick={()=> this.increase(1)}>+</button>
+                        </div>
                     </div>
 
                     <div id="itemThree" className="slot">
                         <img className="images" src="https://90a1c75758623581b3f8-5c119c3de181c9857fcb2784776b17ef.ssl.cf2.rackcdn.com/600422_860312_01_front_thumbnail.jpg"/>
-                    # 3 {SSD.item} 
-                    Price ${SSD.cost} Quantity
-                    <button onClick={()=> this.decrease(2)}>-</button>
-                     {SSD.quantity }
-                    <button onClick={()=> this.increase(2)}>+</button>
+                        <div className="guts"> {SSD.item} {' '}
+                        Price ${SSD.cost} Quantity {' '}
+                        <button onClick={()=> this.decrease(2)}>-</button>
+                        {SSD.quantity }
+                        <button onClick={()=> this.increase(2)}>+</button>
+                        </div>
                     </div>
                     
                     <div id="itemFour" className="slot">
-                    <img className="images" src="https://90a1c75758623581b3f8-5c119c3de181c9857fcb2784776b17ef.ssl.cf2.rackcdn.com/611303_984534_01_front_thumbnail.jpg"/>
-                    # 4 {RAM.item} 
-                    Price ${RAM.cost} Quantity
-                    <button onClick={()=> this.decrease(3)}>-</button>
-                     {RAM.quantity }
-                    <button onClick={()=> this.increase(3)}>+</button>
+                        <img className="images" src="https://90a1c75758623581b3f8-5c119c3de181c9857fcb2784776b17ef.ssl.cf2.rackcdn.com/611303_984534_01_front_thumbnail.jpg"/>
+                        <div className="guts"> {RAM.item} {' '}
+                        Price ${RAM.cost} Quantity {' '}
+                        <button onClick={()=> this.decrease(3)}>-</button>
+                        {RAM.quantity }
+                        <button onClick={()=> this.increase(3)}>+</button>
+                        </div>
                     </div>
                 </div>
 
